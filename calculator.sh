@@ -8,7 +8,8 @@ echo "0. Exit"
 echo "1. Addition"
 echo "2. Subtraction"
 echo "3. Multiplication"
-echo "4. Modulus"
+echo "4. Division"
+echo "5. Modulus"
 echo "------------"
 
 read -p "Enter your choice: " choice
@@ -36,6 +37,11 @@ case $choice in
         ;;
     
     4)
+        res=$((num1 / num2))
+        echo "Division: $res"
+        ;;
+   
+   5)
         res=$((num1 % num2))
         echo "Modulus: $res"
         ;;
