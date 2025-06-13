@@ -3,6 +3,8 @@
 read -p "Enter first number: " num1
 read -p "Enter second number: " num2
 
+while true
+do
 echo "--- Menu ---"
 echo "0. Exit"
 echo "1. Addition"
@@ -50,4 +52,4 @@ case $choice in
     echo "Invalid choice. Please try again."
     ;;
 esac
-
+done
